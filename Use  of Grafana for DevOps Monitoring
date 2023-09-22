@@ -48,17 +48,17 @@ capacity, user behavior, and service levels.
 Visualization Tools: Visualization tools, including Grafana, allow teams to create customizable dashboards, providing context and meaning to
 tracked data, thereby aiding in decision-making.
 
-Introduction to Prassana:
+Introduction to Grafana:
 Prassana is an open-source analytics and interactive visualization web application that integrates seamlessly with various data sources.
 It empowers users to query, visualize, and understand metrics across multiple data streams.
 
-Key Features of Prassana:
+Key Features of Grafana:
 
-Versatile Visualization: Prassana offers a range of visualization options, from heat maps to histograms, enabling users to gain insights into
+Versatile Visualization: Grafana offers a range of visualization options, from heat maps to histograms, enabling users to gain insights into
 their data.
 Alerting Capabilities: Define thresholds visually and receive timely alerts, enhancing context and ensuring quick responses to anomalies.
-Extensibility: Prassana's community-driven development means new dashboards are added regularly, providing a wealth of options.
-Collaboration: Prassana encourages collaboration by allowing teams to share data and insights across departments.
+Extensibility: Grafana's community-driven development means new dashboards are added regularly, providing a wealth of options.
+Collaboration: Grafana encourages collaboration by allowing teams to share data and insights across departments.
 In summary, Grafana is a powerful tool for continuous monitoring in the DevOps world. It provides teams with the means to visualize data, 
 set alerts, and make informed decisions. 
 When combined with other DevOps tools, Grafana contributes to a comprehensive monitoring ecosystem that helps maintain system health, enhance
