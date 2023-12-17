@@ -1,1 +1,25 @@
 what is QUery FOlding in power BI? explain with a simple example.
+
+Query Folding in Power BI refers to the optimization technique where the Power Query engine pushes parts of the data transformation process back to the data source. This is particularly beneficial when working with databases because it allows the database server to perform some of the data manipulations, reducing the amount of data transferred to Power BI and potentially improving performance.
+
+Let me explain with a simple example:
+
+Suppose you have a SQL Server database, and you're retrieving data from a table called "Sales." You apply some transformations in Power BI, such as filtering rows based on a specific condition and then calculating the total sales. If query folding is enabled, Power BI will attempt to push these operations back to the SQL Server instead of fetching all the data into Power BI and performing the transformations locally.
+
+Without Query Folding:
+
+Power BI retrieves all rows from the "Sales" table.
+Power BI applies filtering and calculation locally.
+With Query Folding:
+
+Power BI translates the applied transformations into SQL queries.
+Power BI sends these queries to the SQL Server.
+The SQL Server performs the filtering and calculation.
+Power BI receives only the results, not the entire dataset.
+This can significantly improve performance, especially when dealing with large datasets.
+
+For instance, if you apply a filter in Power BI to get sales data only for the year 2023, query folding would convert this filter condition into a SQL WHERE clause and execute it on the SQL Server, ensuring that only relevant data is transmitted to Power BI.
+
+Enabling query folding requires a data source that supports it and appropriate configurations. It's important to note that not all transformations can be folded, and some may still be processed locally in Power BI. Always check the query execution plan to verify if query folding is occurring.
+
+I hope this example helps you understand the concept of Query Folding in Power BI.
